@@ -6,3 +6,7 @@ Setup directory and files for TFT_eSPI according to the [tips section](https://g
 You must make sure only one setup file is called. In the custom setup file I add the file path as a commented out first line that can be cut and pasted back into the upgraded User_Setup_Select.h file. The ../ at the start of the path means go up one directory level. Clearly you could use different file paths or directory names as long as it does not clash with another library or folder name.
 
 Also, an updated ST7789_Init.h file without the legacy backlight code, which you need to copy into TFT_eSPI/Drivers directory, overwriting the existing one.
+
+## Prolem Solving
+
+[This thread](https://github.com/Bodmer/TFT_eSPI/discussions/2377) was helpful to debugging.
